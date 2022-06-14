@@ -1,0 +1,94 @@
+body, html {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+section {
+    position: fixed;
+    top: 100%;
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    padding: 50px;
+    opacity: 0;
+}
+
+section.active {
+    top: 0 !important;
+    opacity: 1;
+}
+
+.window-left {
+    position: fixed;
+    font-size: 20px;
+    font-weight: 500;
+    height: 100%;
+    width: 30%;
+}
+
+.window-left nav {
+    padding: 15%;
+}
+
+.nav {
+    display: block;
+}
+
+li.active .nav-link {
+    color: #ffca2c;
+}
+
+.myPhoto {
+    margin-left: 50px;
+}
+.facts {
+    float: left;
+    display: inline;
+}
+
+.preloader {
+    z-index: 9999;
+    background: #fdfdfd;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+}
+
+.preloader .item {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.preloader .item strong {
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+    font-size: 20px;
+}
+
+.card {
+    max-width: 220px;
+    width: auto;
+    height: auto;
+}
+
+.card svg {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+    max-width: 210px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+}
+
+.content {
+    position: relative;
+    left: 30%;
+    max-width: 70%;
+}
+
+
